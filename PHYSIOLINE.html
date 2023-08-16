@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div>
+	<div>
+
+		<fieldset style="border: 1px solid #0494AA;"><br>
+			<img src="images/Physio_Logo.jpeg" alt="Physio" style="width:21%; height: 19%">
+		<img src="images/Medical_Supply1.jpeg" alt="Physio" style="width:23%; height: 21%">
+		<img src="images/Medical_Supply2.jpeg" alt="Physio" style="width:19%; height: 21%">
+		<img src="images/Medical_Supply3.jpeg" alt="Physio" style="width:11%; height: 21%">
+		<img src="images/Medical_Supply4.jpeg" alt="Physio" style="width:16%; height: 21%">
+</fieldset>
+	</div>
+	
+<div style="width: 100%;">
+<div style="width: 50%; height: 25px; float: left;">
+      <div class="display-date" style="width: 40%; height: 30px; float: left;">
+        <span id="day">day</span>, 
+        <span id="daynum">00</span>
+        <span id="month">month</span>
+        <span id="year">0000</span>
+      </div>
+      <div class="display-time" style="width: 40%; height: 30px; float: right;"></div>
+</div>
+
+<div  style="margin-left: 50%; height: 25px;">
+    <form action="/action_page.php">
+    				<button type="submit" class="jus" style="width: 30%; height: 45px; float: right;"><i class="fa fa-search">Search</i></button>
+    				<input type="text" style="border: 1px solid #0494AA; width: 45%; height: 45px; float: right;" placeholder="Search.." name="search">
+    </form>
+</div>
+</div>
+
+<div class="Navtop" style="width:100%; height:100%">
+<div>
+  <a href="#About">About</a>
+  <a href="#News">News</a>
+
+  <div class="sub-menu">
+	     <button class="btn">Our product <i class="fa fa-caret-down"></i></button>
+		 <div class="content">
+		    <a href="Tableproduct.html"> Tables </a>
+			<a href="#"> Treadmill </a>
+			<a href="#"> Rehabilitation equipment </a>
+			<a href="#"> Ergocycles </a>
+			<a href="#"> Muscle strengthening devices </a>
+			<a href="#"> Others products </a>
+		 </div>
+   </div>
+
+  <div class="sub-menu">
+	     <button class="btn"> Our speciality <i class="fa fa-caret-down"></i></button>
+		 <div class="content">
+		    <a href="#"> General Medicine </a>
+			<a href="#"> Dentistry </a>
+			<a href="#"> Physiotherapy </a>
+		 </div>
+  </div>
+
+  <a href="PHYSIOLINE.html">Home</a>
+  <div class="Navtop-left">
+    <a href="MyAccount.html">My account</a>
+    <a href="Contact.html">Contact us</a>
+  </div>
+</div>
+</div>
+
+	<title>PHYSIOLINE</title>
+	
+	<link rel="stylesheet" href="Home.css">
+	<link rel="stylesheet" href="datetime.css">
+	<script src="CurrentDatenTime.js"></script>
+
+</head>
+
+<body><br>
+<div style="width:100%">
+	<div style= "width: 25%; height: 70%; float: left;">
+		<fieldset style = "border: 1px solid #0494AA;">
+			<legend>
+				News: 
+			</legend>
+			<p>These tables are particularly suitable for physiotherapists and are also popular in consultation departments. The file is relevant to facilitate the work of the practitioner and the greatest comfort of the patient.</p>
+		</fieldset><br>
+
+		<fieldset style = "border: 1px solid #0494AA;">
+			<legend>
+				Special Items:  
+			</legend>
+			<p>These tables are particularly suitable for physiotherapists and are also popular in consultation departments. The file is relevant to facilitate the work of the practitioner and the greatest comfort of the patient.</p>
+		</fieldset>
+	</div>
+
+<div style="width:65%; height:70%; float: right;">
+	<div style="width:100%; height:25%; float: right;">
+		<label for="menu">Product: </label><br>
+		<select name="menu" id="menu">
+			<option value="null">Choose Product</option>
+			<option value="table">Tables</option>
+			<option value="treadmill">Treadmill</option>
+			<option value="equipment">Rehabilitation equipment</option><br>
+			<option value="rgocycles">Ergocycles</option><br>
+			<option value="muscle">Muscle strengthening devices</option><br>
+			<option value="others">Others products</option><br>
+	  </select><br><br>
+	</div>
+</div>
+
+
+
+<div>
+	<fieldset style="border: none; width:30%; height: 50%; float:right;">
+	<table style="border:none; width:100%; height: 100%;">
+	<tr>
+		<td>Tables</td>
+		<td><img src="images/Tables.jpeg" alt="Physio" style="width:100%; height: 100%"></td>
+	</tr>
+	<tr>
+		<td>Treadmill</td>
+		<td><img src="images/Treadmill.jpeg" alt="Physio" style="width:100%; height: 100%"></td>
+	</tr>
+	<tr>
+		<td>Rehabilitation equipment</td>
+		<td>
+			<img src="images/Rehabilitation_equipment.jpeg" alt="Physio" style="width:100%; height: 100%">
+		</td>
+			
+	</tr>
+	<tr>
+		<td>Ergocycles</td>
+		<td><img src="images/Ergocycles.jpeg" alt="Physio" style="width:100%; height: 100%"></td>
+	</tr>
+	<tr>
+		<td>Muscle strengthening devices</td>
+		<td><img src="images/Muscle_strengthening_devices.jpeg" alt="Physio" style="width:100%; height: 100%"></td>
+	</tr>
+	<tr>
+		<td>Others Products</td>
+		<td>
+			<img src="images/Others_products.jpeg" alt="Physio" style="width:100%; height: 100%">
+	</tr>
+</table><br><br>
+</fieldset>
+</div>
+
+
+<div class="form">
+	<fieldset style="border: none; width:30%; height: 50%; float:right;">
+		<form action="product.php" method="POST">
+
+			<p><label>Reference</label>
+			<input type="text" name="ref"><br></p>
+
+			<p><label>Name</label><br>
+			<input type="text" name="nam"></p>
+			
+			<p><label>Category</label><br>
+			<input type="text" name="cat"></p>
+
+			<p><label>Labels</label><br>
+			<input type="text" name="label"></p>
+
+			<p><label>Characteristics</label><br>
+			<input type="text" name="charact"></p>
+
+			<p>
+				<input type="submit" name="submit" id="submit" value="Submit">
+			</p>
+		</form>
+	</fieldset>
+</div>
+
+
+</div>	
+
+</body>
+</html>

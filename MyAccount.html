@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div>
+  <div>
+
+    <fieldset style="border: 1px solid #0494AA;"><br>
+      <img src="images/Physio_Logo.jpeg" alt="Physio" style="width:21%; height: 19%">
+    <img src="images/Medical_Supply1.jpeg" alt="Physio" style="width:23%; height: 21%">
+    <img src="images/Medical_Supply2.jpeg" alt="Physio" style="width:19%; height: 21%">
+    <img src="images/Medical_Supply3.jpeg" alt="Physio" style="width:11%; height: 21%">
+    <img src="images/Medical_Supply4.jpeg" alt="Physio" style="width:16%; height: 21%">
+</fieldset>
+  </div>
+  
+<div style="width: 100%;">
+<div style="width: 50%; height: 25px; float: left;">
+      <div class="display-date" style="width: 40%; height: 30px; float: left;">
+        <span id="day">day</span>, 
+        <span id="daynum">00</span>
+        <span id="month">month</span>
+        <span id="year">0000</span>
+      </div>
+      <div class="display-time" style="width: 40%; height: 30px; float: right;"></div>
+</div>
+
+<div  style="margin-left: 50%; height: 25px;">
+    <form action="/action_page.php">
+            <button type="submit" class="jus" style="width: 30%; height: 45px; float: right;"><i class="fa fa-search">Search</i></button>
+            <input type="text" style= " border: 1px solid #0494AA; width: 45%; height: 45px; float: right;" placeholder="Search.." name="search" >
+    </form>
+</div>
+</div>
+ 
+<div class="Navtop" style="width:100%; height:100%">
+  <a href="#About">About</a>
+  <a href="#News">News</a>
+
+  <div class="sub-menu">
+       <button class="btn">Our product <i class="fa fa-caret-down"></i></button>
+     <div class="content">
+        <a href="Tableproduct.html"> Tables </a>
+      <a href="#"> Rehabilitation equipment </a>
+      <a href="#"> Muscle strengthening devices </a>
+     </div>
+  </div>
+
+  <div class="sub-menu">
+       <button class="btn"> Our speciality <i class="fa fa-caret-down"></i></button>
+     <div class="content">
+        <a href="#"> General Medicine </a>
+      <a href="#"> Dentistry </a>
+      <a href="#"> Physiotherapy </a>
+     </div>
+  </div>
+
+  <a href="PHYSIOLINE.html">Home</a>
+  <div class="Navtop-left">
+    <a href="MyAccount.html">My account</a>
+    <a href="Contact.html">Contact us</a>
+  </div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="Home.css">
+<script src="CurrentDatenTime.js"></script>
+</head>
+<body>
+
+<h2>Login to your Account.</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="process.php" method="POST">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <h1>Login</h1>
+      <p>Please fill in this form to login an account.</p>
+      <hr>
+
+      <label for="Email"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="Email" required>
+
+      <label for="pass"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <!-- checked="checked" -->
+        <input type="checkbox" name="remember" > Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="pass">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="Sign_up.php" style="border:1px solid #ccc">
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="Email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="Email" required>
+
+    <label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required>
+
+   <!-- <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required> -->
+    
+   <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

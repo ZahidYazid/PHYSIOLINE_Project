@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	
+ <div>
+	<div>
+
+		<fieldset style="border: 1px solid #0494AA;"><br>
+			<img src="images/Physio_Logo.jpeg" alt="Physio" style="width:21%; height: 19%">
+		<img src="images/Medical_Supply1.jpeg" alt="Physio" style="width:23%; height: 21%">
+		<img src="images/Medical_Supply2.jpeg" alt="Physio" style="width:19%; height: 21%">
+		<img src="images/Medical_Supply3.jpeg" alt="Physio" style="width:11%; height: 21%">
+		<img src="images/Medical_Supply4.jpeg" alt="Physio" style="width:16%; height: 21%">
+</fieldset>
+	</div>
+	
+<div style="width: 100%;">
+<div style="width: 50%; height: 25px; float: left;">
+      <div class="display-date" style="width: 40%; height: 30px; float: left;">
+        <span id="day">day</span>, 
+        <span id="daynum">00</span>
+        <span id="month">month</span>
+        <span id="year">0000</span>
+      </div>
+      <div class="display-time" style="width: 40%; height: 30px; float: right;"></div>
+</div>
+
+<div  style="margin-left: 50%; height: 25px;">
+    <form action="/action_page.php">
+    				<button type="submit" class="jus" style="width: 30%; height: 45px; float: right;"><i class="fa fa-search">Search</i></button>
+    				<input type="text" style=" border: 1px solid #0494AA; width: 45%; height: 45px; float: right;" placeholder="Search.." name="search" >
+    </form>
+</div>
+</div>
+
+  
+<div class="Navtop" style="width:100%; height:100%">
+  <a href="#About">About</a>
+  <a href="#News">News</a>
+ 
+  <!--<a href="#Ourproduct">Our product</a> -->
+
+  <div class="sub-menu">
+	     <button class="btn">Our product <i class="fa fa-caret-down"></i></button>
+		 <div class="content">
+		    <a href="Tableproduct.html"> Tables </a>
+			<a href="#"> Rehabilitation equipment </a>
+			<a href="#"> Muscle strengthening devices </a>
+		 </div>
+  </div>
+
+ <!-- <a href="#Ourspeciality">Our speciality</a> -->
+
+  <div class="sub-menu">
+	     <button class="btn"> Our speciality <i class="fa fa-caret-down"></i></button>
+		 <div class="content">
+		    <a href="#"> General Medicine </a>
+			<a href="#"> Dentistry </a>
+			<a href="#"> Physiotherapy </a>
+		 </div>
+  </div>
+
+  <a href="PHYSIOLINE.html">Home</a>
+  <div class="Navtop-left">
+    <a href="MyAccount.html">My account</a>
+    <a href="Contact.html">Contact us</a>
+  </div>
+</div>
+
+<title>PHYSIOLINE/Contact</title>
+
+<link rel="stylesheet" href="Contact.css">
+<link rel="stylesheet" href="home.css">
+<script src="CurrentDatenTime.js"></script>
+ </head>
+ <body>
+
+<div class= "container" style="width:100%">
+
+	<div style="width:40%; height: 30%; float:left;">
+		
+		<legend> 
+			<h1>Nous contacter: </h1>
+		</legend>
+			
+			<h4>Our teams and our partners operate throughout the United States and around the world to provide you with quality service without borders.</h4>
+
+			<h4>A team at the head office is at your disposal for any information, by email or telephone.</h4>
+
+			<h2>PHYSIOLINE – PL – Brooklyn Industrial City 11209 – Brooklyn, NY – United States</h2>
+
+			<h2>Cellphone : +1-(247)-234-4352</h2>
+
+</div>
+
+	<div style="width:50%;height:20%; float: right;">
+		
+		<img src="images/Brooklyn_map.jpeg" alt="Physio" style="width:95%; height:95%">
+	</div>
+	
+</div>
+
+<div class="container">
+<form action="action_page.php">
+<fieldset style="width:100%; height:50%; border:none;">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="Europe">Europe</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</div>
+
+ </body>
+ </html>

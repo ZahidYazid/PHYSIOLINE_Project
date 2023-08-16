@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Dropdown Example</title>
+</head>
+<body>
+    <form method="post" action="">
+        Product: 
+        <select name="Product">
+            <option>Choose Product</option>
+            <?php 
+            include("connect.php");
+
+            $select = "SELECT * FROM Product";
+            $result = mysqli_query($link, $select) or die(mysqli_error($link));
+
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<option value='" . $row['Product'] . "'>" . $row['Product'] . "</option>";
+            }
+            ?>
+        </select>
+
+        <br>
+
+        Subproduct:
+        <select name="Subproduct">
+            <?php
+            $Product = @$_POST['Product'];
+
+            if ($Product) {
+                $select = "SELECT * FROM subproduct WHERE Product='$Product'";
+                $result = mysqli_query($link, $select) or die(mysqli_error($link));
+
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "<option value='" . $row['Subproduct'] . "'>" . $row['Subproduct'] . "</option>";
+                }
+            }
+            ?>
+        </select>
+        <br>
+
+        <input type="submit" value="Open" name="submit">
+    </form>
+</body>
+</html>
+
