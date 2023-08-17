@@ -4,12 +4,13 @@
     // getting all values from the HTML form
     if(isset($_POST['submit']))
     {
-        $Reference = $_POST['Reference'];
-        $Name = $_POST['Name'];
-        $Category = $_POST['Category'];
-         $Labels = $_POST['Labels'];
-        $Characteristics = $_POST['Characteristics'];
-
+        $product_id = $_POST['product_id'];
+        $name = $_POST['name'];
+        $description = $_POST['description'];
+        $category = $_POST['category'];
+        $price = $_POST['price'];
+        $image_url = $_POST['image_url'];
+        $brand = $_POST['brand'];
     }
 
     // database details
@@ -28,7 +29,7 @@
     }
 
     // using sql to create a data entry query
-    $sql = "INSERT INTO Product (Reference, Name, Category, Labels, Characteristics) VALUES ('0', '$Reference', '$Name', '$Category', '$Category', '$Labels', '$Characteristics')";
+    $sql = "INSERT INTO Product (product_id, name, description, category, price, image_url, brand) VALUES ('0', '$product_id', '$name', '$description', '$category', '$price', '$image_url','$brand')";
   
     // send query to the database to add values and confirm if successful
     $rs = mysqli_query($con, $sql);

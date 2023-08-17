@@ -1,7 +1,11 @@
 <?php
 
-$Email = $_POST['Email'];
-$pass = $_POST['pass'];
+$user_id = $_POST['user_id'];
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+$full_name = $_POST['full_name'];
+$created_at = $_POST['created_at'];
 
 $servername = "localhost";
 $username = "root";
@@ -14,10 +18,10 @@ if ($conn->connect_error){
     die("Connection failed: ". $conn->connect_error);
 }
 
-$sqli = "INSERT INTO 'Account' ('Email','pass') VALUES ('$Email','$pass')";
+$sqli = "INSERT INTO 'Users' ('user_id', 'username', 'email', 'password', 'full_name', 'created_at') VALUES ('$user_id', '$username','$email','$password', '$full_name', '$created_at')";
 
 if ($conn->query($sqli) === TRUE) {
-    echo "ADDED: ".$Email.", ".$pass.";
+    echo "ADDED: ".$user_id.", ".$username.", ".$email.", ".$password.", ".$full_name.", ".$created_at.";
 } else {
     echo "Error: ".$sqli."<br>".$conn->error;
 }

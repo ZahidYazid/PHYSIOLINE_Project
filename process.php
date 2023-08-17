@@ -1,7 +1,7 @@
 <?php 
 
-$Email = $_POST['uname'];
-$pass = $_POST['psw'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
 //fetch this from database using select statement
 //Selct pass from usr_table WHERE usr='$un';
@@ -13,7 +13,7 @@ $pas = "admin123";
 if (($Email = $a) && ($pass = $pas))
 {
 	header('Location: http://localhost:8888/PHYSIOLINE.html');
-	echo "<br>".$Email;
+	echo "<br>".$email;
 	exit();
 }
 else

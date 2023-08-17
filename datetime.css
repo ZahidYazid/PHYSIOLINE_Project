@@ -3,12 +3,10 @@
   font-size: 15px;
   font-weight: bold;
   justify-content: center;
-  width: 77px;
-  height: 20px;
   display: flex;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid #0494AA;
+  border: 1px solid #ffd868;
   background: #0494AA;
 }
 
@@ -21,14 +19,12 @@
 .display-time {
   background-color: #0494AA;
   color: #ffd868;
-  width: 77px;
-  height: 20px;
   display: flex;
   font-size: 20px;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid #0494AA;
+  border: 1px solid #ffd868;
   justify-content: center;
 }
 
